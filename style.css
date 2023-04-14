@@ -1,29 +1,258 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-  }
-  
-  #menu {
-    background-color: #BE89CB;
-  }
-  
-  #menu ul {
-    display: flex;
-    padding: 30px;
-    justify-content: right;
-    align-items: flex-end;
-    gap: 150px;
-  }
-  
-  #menu ul li {
-    list-style: none;
-  }
-  
-  #menu ul li a {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    color: #FFFFFF;
-    text-decoration: none;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+body header {
+  font-family: 'Alkatra', cursive;
+}
+
+.header-menu {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding: 8px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  height: 60px;
+  background-color: #FFCDB2
+}
+
+.header-menu nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.meu-menu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  align-items: center;
+}
+
+.meu-menu li>a {
+  color: #ff4dbc;
+  font-size: 20px;
+  text-decoration: inherit;
+  background-color: #FFCDB2;
+}
+
+.principal {
+  height: 145vh;
+  display: flex;
+  background-color: #FFC8DD;
+  background-image: url(imagens/fundofloral.jpg);
+  box-sizing: border-box;
+
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 70px;
+  max-width: 800px;
+  max-height: 900px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.subcontainer-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #FFC8DD;
+  border: 10px solid #FFC8DD;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.meu-nome {
+  font-size: 70px;
+  font-family: 'Monsieur La Doulaise', cursive;
+  color: #ff4dbc;
+  font-weight: 300;
+  height: 20px;
+
+}
+
+#imagem-perfil {
+  width: 280px;
+  height: 300px;
+  border-radius: 250%;
+  position: center;
+  border: 5px solid #ff4dbc
+}
+
+.profissao {
+  color: #E5989B;
+  height: 40px;
+  margin-top: 20%;
+  font-family: 'Courgette', cursive;
+
+}
+
+.texto-sobre {
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Alkatra', cursive;
+  line-height: 35px;
+  color: #ff4dbc;
+}
+
+#formacao {
+  background-color: #B5838D;
+  width: 100%;
+  margin-top: -6%;
+}
+
+#portifolio {
+  background-color: #B5838D;
+  width: 100%;
+  margin-top: -6%;
+
+}
+
+.article-lista {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+
+#hobbies {
+  background-color: #B5838D;
+  width: 100%;
+  margin-top: -6%;
+
+}
+
+.topico-principal {
+  font-size: 40px;
+  color: #FFC8DD;
+  font-family: 'Alkatra', cursive;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 40px;
+}
+
+.lista-item {
+  padding: px;
+}
+
+.lista-item ul li {
+  margin-bottom: 50px;
+  font-family: 'Alkatra', cursive;
+  color: #ff4dbc;
+}
+
+.lista-titulo {
+  margin-bottom: 5px;
+  font-size: 25px;
+  color: #FFCDB2;
+  font-weight: 700;
+  font-family: 'Alkatra', cursive;
+}
+
+.lista-item a {
+  font-size: 15px;
+  color: #FFAFCC;
+}
+
+.lista-descricao {
+  font-size: 25px;
+  margin-top: 5px;
+  line-height: 30px;
+  color: #FFC8DD;
+  font-weight: 300;
+}
+
+.lista-titulo-2 ul {
+  font-size: 25px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #FFCDB2;
+  font-family: 'Alkatra', cursive;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.block {
+  height: 150px;
+  width: 100px;
+}
+
+
+.rodape {
+  display: flex;
+  position: absolute;
+  font-size: 20px;
+  font-weight: 100px;
+  font-family: 'Alkatra', cursive;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: #FFCDB2;
+  padding: 10px;
+  line-height: 100px;
+  margin-top: -20px;
+
+}
+
+.rodape-final {
+  width: 800px;
+  background-color: #FFCDB2;
+
+}
+
+.minhas-redes {
+  font-size: 20px;
+  font-family: 'Alkatra', cursive;
+  color: #ff4dbc;
+  text-align: center;
+  background-color: #FFCDB2;
+}
+
+.redes-sociais li {
+  display: inline-block;
+  height: inherit;
+  background-color: #FFCDB2;
+}
+
+
+
+#icone-facebook {
+  width: 80px;
+  background-color: #FFCDB2;
+}
+
+#icone-instagram {
+  width: 80px;
+  background-color: #FFCDB2;
+}
+
+#icone-linkedin {
+  width: 80px;
+  background-color: #FFCDB2;
+}
+
+#icone-github {
+  width: 80px;
+  background-color: #FFCDB2;
+}
+
+footer ul li {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 20px;
+}
